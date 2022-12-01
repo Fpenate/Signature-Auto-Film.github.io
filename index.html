@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/estilos.css">
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+
+<style>
+.mySlides {display:none;}
+*{background-color: #0c0c0c; /* Color de fondo */}
+</style>
+
+
+</head>
+
+<body>
+
+  <a href="#" class="btn-flotante">.</a>
+<!--<h2 class="w3-center">Signature Auto Film</h2> -->
+
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="img/img2.jpg" style="width:100%">
+  <img class="mySlides" src="img/img3.jpg" style="width:100%">
+  <img class="mySlides" src="img/img4.jpg" style="width:100%">
+  <img class="mySlides" src="img/img5.jpg" style="width:100%">
+  <img class="mySlides" src="img/img6.jpg" style="width:100%">
+  <img class="mySlides" src="img/img7.jpg" style="width:100%">
+</div>
+
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides1" src="img/img8.jpg" style="width:100%">
+  <img class="mySlides1" src="img/img9.jpg" style="width:100%">
+  <img class="mySlides1" src="img/img10.jpg" style="width:100%">
+  <img class="mySlides1" src="img/img11.jpg" style="width:100%">
+  <img class="mySlides1" src="img/img12.jpg" style="width:100%">
+  <img class="mySlides1" src="img/img13.jpg" style="width:100%">
+  <img class="mySlides1" src="img/img14.jpg" style="width:100%">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+carousel1();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+function carousel1() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel1, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
