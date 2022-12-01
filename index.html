@@ -24,13 +24,14 @@
 <!--<h2 class="w3-center">Signature Auto Film</h2> -->
 
 <div class="w3-content w3-section" style="max-width:1000px">
-  <img class="mySlides" src="img/img2.jpg" style="width:100%">
-  <img class="mySlides" src="img/img3.jpg" style="width:100%">
-  <img class="mySlides" src="img/img4.jpg" style="width:100%">
-  <img class="mySlides" src="img/img5.jpg" style="width:100%">
-  <img class="mySlides" src="img/img6.jpg" style="width:100%">
-  <img class="mySlides" src="img/img7.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="img/img2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/img3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="img/img4.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/img5.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/img6.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="img/img7.jpg" style="width:100%">
 </div>
+
 <br>
 <div class="w3-content w3-section" style="max-width:1000px">
   <img class="mySlides1" src="img/img8.jpg" style="width:100%">
@@ -57,7 +58,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000); // Change image every 2 seconds
+  setTimeout(carousel, 5000); // Change image every 2 seconds
 }
 
 function carousel1() {
